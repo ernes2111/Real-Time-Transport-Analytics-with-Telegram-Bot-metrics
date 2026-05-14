@@ -1,0 +1,17 @@
+# Dependencias del bot de consultas de colectivos de Rosario
+# Compatibles con Raspberry Pi Zero 2W (DietPi, ARM)
+
+# HTTP requests
+requests>=2.28.0
+
+# Variables de entorno
+python-dotenv>=1.0.0
+
+# Telegram Bot (async, v20+) con soporte de job-queue (APScheduler)
+python-telegram-bot[job-queue]>=20.7
+
+# Reintentos automáticos ante fallos de red
+tenacity>=8.2.0
+
+# Scheduler para el colector autónomo (también usado por el job-queue del bot)
+APScheduler>=3.10.0
